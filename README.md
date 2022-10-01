@@ -11,5 +11,10 @@
 
 ## Блок схема программы
 
-flowchart TB
-  node2(Start)
+flowchart TD
+    A-- Text ---B
+    C---|Text|D 
+    E-->|text|F 
+    G-- text -->H 
+    I-. text .-> J 
+    K == text ==> L
