@@ -13,5 +13,5 @@
 
 ```mermaid
   graph TB;       
-    node2(Start) --> node1[string[] str = {"hello", "2", "world", ":-)"}]
+    node2("Start") --> node1[string[] str = {"hello", "2", "world", ":-)"}]
 ```
