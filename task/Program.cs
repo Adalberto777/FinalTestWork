@@ -41,7 +41,5 @@ string[] GetShortArray(string[] array, int counter)
 
 int count = CounterShortString(str);
 
-
-
 PrintArray(str);
 PrintArray(GetShortArray(str, count));
