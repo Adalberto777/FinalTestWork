@@ -13,5 +13,5 @@
 
 ```mermaid
   graph TB;       
-    node2("Start")
+    node2(Start)
 ```
