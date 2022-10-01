@@ -13,5 +13,5 @@
 
 ```mermaid
   graph TB;       
-    node2(Start)  --> node1[задаем массив исходный массив строк] --> node9{{Форма 9}}
+    node2(Start)  --> node1[задаем массив исходный массив строк] --> node9{{i=0; i<array.Lenght; i++}}
 ```
