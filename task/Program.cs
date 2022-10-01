@@ -1,11 +1,11 @@
 ﻿// программа, которая из существуещего массива строк формирует массив строк, длинна которых меньше или равна трем
-string[] str = {"hello", "2", "world", ":-)", "1"};
+string[] str = {"hello", "2", "world", ":-)", "1", "1325", "0", "hj"};
 
 void PrintArray(string[] array)
 {
   for (int i = 0; i < array.Length; i++)
   {
-    Console.Write(array[i] + ", ");
+    Console.Write(array[i] + "\t");
   }
   Console.WriteLine();
 }
