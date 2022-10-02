@@ -20,4 +20,5 @@
     node5["newArray[j] = array[i]; j++;"] --> node3{{"i = 0; i < array.Lenght; 1"}};
     node4{"array[i].Lenght < 4"} -- No --> node3{{"i=0; i<array.Lenght;1"}};
     node3{{"i = 0; i < array.Lenght; 1"}} --> node6[/"print(newArray[])"/];
+    node6[/"print(newArray[])"/] --> node1("End");
 ```
