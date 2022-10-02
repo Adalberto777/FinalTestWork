@@ -15,9 +15,9 @@
   graph TB;       
     node1(Start)  --> node2[задаем исходный массив строк];
     node2[задаем массив исходный массив строк] --> node3{{"i = 0; i < array.Lenght; 1"}};
-    node3{{"i = 0; i < array.Lenght; 1"}} --> node4{длинна строки меньше 4};
-    node4{длинна строки меньше 4} -- да --> node5[записываем строку в новый массив];
+    node3{{"i = 0; i < array.Lenght; 1"}} --> node4{"array[i].Lenght < 4"};
+    node4{"array[i].Lenght < 4"} -- да --> node5[записываем строку в новый массив];
     node5[записываем строку в новый массив] --> node3{{"i = 0; i < array.Lenght; 1"}};
-    node4{длинна строки меньше 4} -- нет --> node3{{"i=0; i<array.Lenght;1"}};
+    node4{"array[i].Lenght < 4"} -- нет --> node3{{"i=0; i<array.Lenght;1"}};
     node3{{"i = 0; i < array.Lenght; 1"}} --> node6[вывод исходного и нового массивов];
 ```
