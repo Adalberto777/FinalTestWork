@@ -13,8 +13,8 @@
 
 ```mermaid
   graph TB;       
-    node1(Start)  --> node2["string[] str"];
-    node2["string[] str"] --> node3{{"i = 0; i < array.Lenght; 1"}};
+    node1(Start)  --> node2["string[] str = {"hello", "2", "world", ":-)", "1", "1325", "0", "hj"}"];
+    node2["string[] str = {"hello", "2", "world", ":-)", "1", "1325", "0", "hj"}"] --> node3{{"i = 0; i < array.Lenght; 1"}};
     node3{{"i = 0; i < array.Lenght; 1"}} --> node4{"array[i].Lenght < 4"};
     node4{"array[i].Lenght < 4"} -- Yes --> node5[записываем строку в новый массив];
     node5[записываем строку в новый массив] --> node3{{"i = 0; i < array.Lenght; 1"}};
