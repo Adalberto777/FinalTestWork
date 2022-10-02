@@ -13,11 +13,11 @@
 
 ```mermaid
   graph TB;       
-    node1(Start)  --> node2["array[hello, 2, world, :-, ...)]"];
+    node1(Start)  --> node2["array[hello, 2, world, :-, ...)]; j = 0"];
     node2["array[hello, 2, world, :-, ...)]"] --> node3{{"i = 0; i < array.Lenght; 1"}};
     node3{{"i = 0; i < array.Lenght; 1"}} --> node4{"array[i].Lenght < 4"};
-    node4{"array[i].Lenght < 4"} -- Yes --> node5["newArray[j] = array[i]"];
-    node5["newArray[j] = array[i]"] --> node3{{"i = 0; i < array.Lenght; 1"}};
+    node4{"array[i].Lenght < 4"} -- Yes --> node5["newArray[j] = array[i]; j++"];
+    node5["newArray[j] = array[i]; j++"] --> node3{{"i = 0; i < array.Lenght; 1"}};
     node4{"array[i].Lenght < 4"} -- No --> node3{{"i=0; i<array.Lenght;1"}};
     node3{{"i = 0; i < array.Lenght; 1"}} --> node6["print(newArray[])"];
 ```
